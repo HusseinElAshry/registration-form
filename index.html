@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>registeration form</title>
+    </head>
+    <body style="background-color: rgb(38, 20, 85); color:wheat;">
+        <form>
+            <fieldset >
+                <legend style="font-size: x-large; background-color: teal">
+                    registeration
+                </legend>
+                <br/>
+                <fieldset style="background-color: crimson;">
+                    <legend style="font-size: x-large; background-color:teal;">personal information</legend>
+                    <br/>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="fName">first name</label></td>
+                                <td><input type="text" id="fName" name="first_name" placeholder="your first name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lName">last name</label></td>
+                                <td><input type="text" id="lName" name="last_name" placeholder="your last name"></td>
+                            </tr> 
+                            <tr>
+                                <td><label for="age">Age</label></td>
+                                <td><input type="number" id="age" name="user_age" placeholder="your age"></td>
+                            </tr> 
+                            <tr>
+                                <td>Gender</td>
+                            </tr>                        
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><input type="radio" value="male" id="maleGender" name="user_gender"></td>
+                                <td><label for="maleGender">male</label></td>
+                            </tr>    
+                            <tr>
+                                <td><input type="radio" value="female" id="femaleGender" name="user_gender"></td>
+                                <td><label for="femaleGender">female</label></td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                </fieldset>
+                <br/>
+                <fieldset style="background-color: crimson;">
+                    <legend style="font-size: x-large; background-color: teal;">contact information</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="uMail">Email</label></td>
+                                <td><input type="email" name="user_email" id="uMail" placeholder="your email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="uPhone">phone number</label></td>
+                                <td><input type="tel" name="user_phone" id="uPhone" placeholder="your phone"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <br/>
+                <fieldset style="background-color: crimson;">
+                    <legend style="font-size: x-large; background-color: teal;">Educational information</legend>
+                    <table>
+                        <tbody>
+                            <tr>status</tr>
+                            <tr>
+                                <td><input type="radio" name="education_status" id="student" value="student"></td>
+                                <td><label for="student">student</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="education_status" id="graduated" value="graduated"></td>
+                                <td><label for="graduated">graduated</label></td>
+                            </tr>
+                            <tr>
+                                <td><br/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="university">university</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="university" type="search" list="university_list" name="user_unversity">
+                                    <datalist id="university_list">
+                                        <option value="cairo">cairo</option>
+                                        <option value="helwan">helwan</option>
+                                        <option value="ain shams">ain shams</option>
+                                        <option value="al-azhar">al-azhar</option>
+                                        <option value="mansoura">mansoura</option>
+                                        <option value="tanta">tanta</option>
+                                        <option value="kafr elshiekh">kafr elshiekh</option>
+                                        <option value="benha">benha</option>
+                                        <option value="zagazig">zagazig</option>
+                                        <option value="damitta">damitta</option>
+                                        <option value="horas">horas</option>
+                                        <option value="al-ahram">al-ahram</option>
+                                        <option value="british">british</option>
+                                        <option value="amarican">amarican</option>
+                                        <option value="russian">russian</option>
+                                    </datalist>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <br/>
+                <div style="text-align: center;">
+                    <button type="submit" style="background-color: rgb(42, 68, 237); border-radius: 25%; font-size:x-large; padding: 0.25%;">submit</button>
+                </div>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
